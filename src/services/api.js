@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API_KEY = 'f260cd43';
-const BASE_URL = 'http://www.omdbapi.com/';
+const BASE_URL = 'https://www.omdbapi.com/';
 export const fetchMovies = async (query) => {
   try {
     const response = await axios.get(`${BASE_URL}?s=${query}&apikey=${API_KEY}`);
